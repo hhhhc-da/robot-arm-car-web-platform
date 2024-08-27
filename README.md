@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# robot_arm
-ESP32(FreeRTOS) + STM32(None OS) + WebServer
-=======
 ![banner](https://raw.githubusercontent.com/d2-projects/d2-admin/master/docs/image/banner.png)
 
 <p align="center">
