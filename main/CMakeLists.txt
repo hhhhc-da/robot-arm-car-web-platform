@@ -1,0 +1,1 @@
+idf_component_register(SRCS "robotic_arm.cpp" "main.cpp" "components.cpp" INCLUDE_DIRS ".")
