@@ -1,8 +1,7 @@
 # coding=utf-8
 import pymysql, datetime, random
 
-pwd = str((114514+114514)*(-11+4-5+14)+(114514+(11451*4+((1+1)*451*4+(1-1*-(45+1)*4)))))
-pwd += ''.join([chr(ord(i)+1) for i in 'ahm'])
+pwd = ''
 
 arg_kwargs={
     'host':"localhost",
