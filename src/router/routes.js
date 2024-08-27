@@ -1,6 +1,6 @@
-// import playground from './modules/playground'
-// import plugins from './modules/plugins'
-// import components from './modules/components'
+import playground from './modules/playground'
+import plugins from './modules/plugins'
+import components from './modules/components'
 import nanoka from './modules/route-nanoka'
 
 import layoutHeaderAside from '@/layout/header-aside'
@@ -53,9 +53,9 @@ const frameIn = [
       }
     ]
   },
-  // playground,
-  // plugins,
-  // components,
+  playground,
+  plugins,
+  components,
   nanoka
 ]
 

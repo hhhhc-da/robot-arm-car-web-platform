@@ -1,22 +1,14 @@
 <template>
   <d2-container type="full" class="page">
-    <d2-grid-layout
-      v-bind="layout"
-      @layout-updated="layoutUpdatedHandler">
-      <d2-grid-item
-        v-for="(item, index) in layout.layout"
-        :key="index"
-        v-bind="item"
-        @resize="resizeHandler"
-        @move="moveHandler"
-        @resized="resizedHandler"
-        @moved="movedHandler">
+    <d2-grid-layout v-bind="layout" @layout-updated="layoutUpdatedHandler">
+      <d2-grid-item v-for="(item, index) in layout.layout" :key="index" v-bind="item" @resize="resizeHandler"
+        @move="moveHandler" @resized="resizedHandler" @moved="movedHandler">
         <el-card shadow="never" class="page_card">
-          <el-tag size="mini" type="info" slot="header">{{item.i}}</el-tag>
+          <el-tag size="mini" type="info" slot="header">{{ item.i }}</el-tag>
           <template v-if="item.i === '当前图片'">
             <el-card class="box-card" style="display: flex;justify-content: center;">
-              <p><strong>上一次</strong>保存的地图</p>
-              <p v-if="save_pos">小车位置: {{save_pos}}</p>
+              <p><strong>上一次</strong>保存的图片</p>
+              <p v-if="save_pos">小车位置: {{ save_pos }}</p>
             </el-card>
             <el-card class="box-card" style="display: flex;justify-content: center;">
               <img style="width:300px; height:300px;" v-if="saveData" :src="saveData" alt="保存展示的图片" />
@@ -25,7 +17,7 @@
           <template v-if="item.i === '视频流'">
             <el-card class="box-card" style="display: flex;justify-content: center;">
               <p><strong>即时</strong>视频流展示</p>
-              <p v-if="stream_pos">小车位置: {{stream_pos}}</p>
+              <p v-if="stream_pos">小车位置: {{ stream_pos }}</p>
             </el-card>
             <el-card class="box-card" style="display: flex;justify-content: center;">
               <img style="width:300px; height:300px;" v-if="streamData" :src="streamData" alt="从后端请求的图片" />
@@ -243,13 +235,16 @@ export default {
     background-color: $color-bg;
     border-radius: 4px;
     margin: -10px;
+
     .page_card {
       height: 100%;
       @extend %unable-select;
     }
+
     .vue-resizable-handle {
       opacity: .3;
-      &:hover{
+
+      &:hover {
         opacity: 1;
       }
     }

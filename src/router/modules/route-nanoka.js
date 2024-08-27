@@ -47,6 +47,12 @@ export default {
       name: 'nanoka-object-detect',
       component: _import('nanoka/object'),
       meta: { ...meta, title: '物体识别' }
+    },
+    {
+      path: 'robotarm_control',
+      name: 'nanoka-robotarm-control',
+      component: _import('nanoka/control'),
+      meta: { ...meta, title: '机械臂' }
     }
   ]
 }

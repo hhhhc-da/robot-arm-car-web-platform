@@ -1,11 +1,11 @@
 import { uniqueId } from 'lodash'
 
-// // 插件
-// import demoPlugins from './modules/demo-plugins'
-// // 组件
-// import demoComponents from './modules/demo-components'
-// // 功能
-// import demoPlayground from './modules/demo-playground'
+// 插件
+import demoPlugins from './modules/demo-plugins'
+// 组件
+import demoComponents from './modules/demo-components'
+// 功能
+import demoPlayground from './modules/demo-playground'
 // 核心功能
 import nanoka from './modules/nanoka'
 
@@ -28,9 +28,9 @@ function supplementPath (menu) {
 
 // 菜单 侧边栏
 export const menuAside = supplementPath([
-  // demoComponents,
-  // demoPlugins,
-  // demoPlayground,
+  demoComponents,
+  demoPlugins,
+  demoPlayground,
   nanoka
 ])
 
@@ -49,8 +49,8 @@ export const menuHeader = supplementPath([
       }
     ]
   },
-  // demoPlayground,
-  // demoComponents,
-  // demoPlugins,
+  demoPlayground,
+  demoComponents,
+  demoPlugins,
   nanoka
 ])

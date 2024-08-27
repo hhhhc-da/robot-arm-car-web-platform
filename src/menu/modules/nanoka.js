@@ -32,6 +32,11 @@ export default {
       path: '/nanoka/object_detect',
       title: '物体识别',
       icon: 'tasks'
+    },
+    {
+      path: '/nanoka/robotarm_control',
+      title: '机械臂',
+      icon: 'bug'
     }
   ]
 }
