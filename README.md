@@ -1,4 +1,4 @@
-# robot_arm
+# 机械臂、小车 多功能控制平台
 ESP32(FreeRTOS) + STM32(None OS) + WebServer
 
 ```
