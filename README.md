@@ -6,6 +6,4 @@ ESP32(FreeRTOS) + STM32(None OS) + WebServer
 
 ![image](index.png)
 
-<div style="width:50%;">
-  ![image](RobotArm.jpg)
-</div>div
+![image](RobotArm.jpg =100x200)
